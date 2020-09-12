@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Rasterizer</title>
+
+  <link rel="stylesheet" href="./style/style.css">
+  <script type="module" src="./script/app.js"></script>
+
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h1>SVG Rasterizer</h1>
+
+    <input id="svg_upload" type="file" accept=".svg" class="at_only" aria-label="upload SVG File">
+    <label for="svg_upload" class="btn" aria-hidden="true">upload SVG file</label>
+
+    <label>file name: <input type="text" id="file_name"></label>
+
+    <fieldset>
+      <legend>background color:</legend>
+      <label for="radio-color-none" class="radio"><input type="radio" name="bg_color" id="radio-color-none" value="none" checked> <span>none</span></label>
+      <label for="radio-color" class="radio"><input type="radio" name="bg_color" id="radio-color" value="custom" aria-controls="bg_color_picker"> <span>pick color</span>
+        <input id="bg_color_picker" type="color" value="#fadc30" disabled></label>
+    </fieldset> 
+
+    <button id="save_file_button" class="btn">save file</button>
+  </aside>
+  
+  <main id="content">
+    
+  </main>
+</body>
+
+</html>
